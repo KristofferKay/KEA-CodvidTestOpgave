@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-
 public class Main {
     static FileHandler fh = new FileHandler();
     static ArrayList<Covid19Data> covidData = fh.loadAllData();
@@ -10,14 +9,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ønsker du at sortere via Navn eller via Age");
+        System.out.println("Enter if you want to sort by Name or Age");
         String input = scanner.next();
         switch (input) {
-            case "navn" -> {sortName();}
-            case "age" -> { sortAge();}
+            case "name" -> {sortName();}
+            case "age" -> {sortAge();}
         }
     }
-
     public static void sortName() {
         System.out.println("Sorting by Name");
         Collections.sort(covidData, new RegionComparator().reversed());

@@ -8,7 +8,7 @@ public class Main {
         ArrayList<Covid19Data> covidData = fh.loadAllData();
 
         System.out.println("Sorting by Name");
-        Collections.sort(covidData, new RegionComparator());
+        Collections.sort(covidData, new RegionComparator().reversed());
         for (Covid19Data covid19Data : covidData) {
             System.out.println(covid19Data);
         }

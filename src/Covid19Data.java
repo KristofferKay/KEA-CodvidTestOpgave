@@ -22,6 +22,7 @@ public class Covid19Data {
         this.dato = dato;
     }
 
+
     @Override
     public String toString() {
         return "Covid19Data" +
@@ -32,5 +33,33 @@ public class Covid19Data {
                 ", indlagtePåIntensiv='" + indlagtePåIntensiv + '\'' +
                 ", indlagte=" + indlagte +
                 ", dato='" + dato + '\'';
+    }
+
+    public String getAldersGruppe() {
+        return aldersGruppe;
+    }
+
+    public int getBekræftetTilfælde() {
+        return bekræftetTilfælde;
+    }
+
+    public int getDøde() {
+        return døde;
+    }
+
+    public String getIndlagtePåIntensiv() {
+        return indlagtePåIntensiv;
+    }
+
+    public int getIndlagte() {
+        return indlagte;
+    }
+
+    public String getDato() {
+        return dato;
+    }
+
+    public String getRegion() {
+        return region;
     }
 }

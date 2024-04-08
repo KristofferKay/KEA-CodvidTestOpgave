@@ -11,4 +11,7 @@ public class RegionComparator implements Comparator<Covid19Data> {
        return o1.getRegion().compareTo(o2.getRegion());
 
     }
+
+
+
 }
